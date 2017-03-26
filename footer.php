@@ -1,3 +1,4 @@
+<?php get_template_part('templates/globals/social-media'); ?>
 <!-- ########## FOOTER ########## -->
 <footer id="footer" class="uk-padding-small">
   <div class="uk-container">
@@ -10,7 +11,7 @@
         <li class="uk-display-inline-block"><a href="javascript:void(0);"><i class="fa fa-youtube fa-2x"></i></a></li>
         <li class="uk-display-inline-block"><a href="javascript:void(0);"><i class="fa fa-github fa-2x"></i></a></li>
       </ul>
-      <p class="uk-text-center">Copyright 2017. CloudThemes | Vist the <a href="https://creativemarket.com/cloud.themes" target="_blank">CloudThemes</a> store for more themes!</p>
+      <p class="uk-text-center">Copyright <?php echo date('Y'); ?>. Some company</p>
     </div>
   </div>
 </footer>

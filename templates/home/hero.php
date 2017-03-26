@@ -2,10 +2,10 @@
 <section id="hero" uk-height-viewport>
   <?php get_template_part('templates/globals/navigation'); ?>
     <div class="uk-container uk-text-center content">
-      <h1 uk-scrollspy="cls:uk-animation-slide-top-small; delay: 100; repeat: true">Mike Doe</h1>
-      <h2 uk-scrollspy="cls:uk-animation-slide-top-small; delay: 300; repeat: true">Freelance Web Designer and Coffee Addict</h2>
-      <a uk-scrollspy="cls:uk-animation-slide-top-small; delay: 400; repeat: true" class="uk-button uk-button-large uk-button-primary" href="#portfolio" uk-scroll>
-        Portfolio <i class="fa fa-folder"></i>
+      <h1 uk-scrollspy="cls:uk-animation-slide-top-small; delay: 100; repeat: true">Your Organization</h1>
+      <h2 uk-scrollspy="cls:uk-animation-slide-top-small; delay: 300; repeat: true">Some facny tag line goes here...</h2>
+      <a uk-scrollspy="cls:uk-animation-slide-top-small; delay: 400; repeat: true" class="uk-button uk-button-large uk-button-primary" href="<?php echo site_url(); ?>/blog">
+        My Blog <i class="fa fa-comments"></i>
       </a>
       <ul class="uk-list social-links" uk-scrollspy="cls:uk-animation-slide-top-small; delay: 500; repeat: true">
         <li class="uk-display-inline-block"><a href="javascript:void(0);"><i class="fa fa-facebook fa-2x"></i></a></li>
