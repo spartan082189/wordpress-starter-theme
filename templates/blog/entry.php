@@ -4,9 +4,10 @@
     </h2>
     <?php
     if (is_archive() || is_search()) {
-        get_template_part('entry', 'summary');
+        get_template_part('/templates/blog/entry-summary');
     } else {
-        get_template_part('entry', 'content');
+        // get_template_part('/templates/blog/entry-content');
+        get_template_part('/templates/blog/entry-summary');
     }
     ?>
     <?php

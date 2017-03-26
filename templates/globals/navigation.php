@@ -13,7 +13,7 @@
           <li class="uk-display-inline-block uk-padding-small"><a href='#contact' class="uk-display-block" uk-scroll><i class="fa fa-envelope" aria-hidden="true"></i><span>Get In Touch</span></a></li>
         </ul>
       </div>
-      <div class="uk-width-1-4 uk-text-right"><a class="uk-logo uk-display-inline-block uk-padding-small" href="#hero" uk-scroll>ZEUS</a></div>
+      <div class="uk-width-1-4 uk-text-right"><a class="uk-logo uk-display-inline-block uk-padding-small" href="#hero" uk-scroll>LOGO</a></div>
     </div>
     <!-- Standard Header -->
     <div class="uk-width-1-1 non-sticky">
@@ -22,7 +22,7 @@
           <a href="javascript:void(0);" class="toggle-menu-btn uk-display-inline-block" uk-toggle="target: #offcanvas-push"><i class="fa fa-bars fa-2x"></i></a>
         </div>
         <div class="uk-width-1-2 uk-text-right">
-          <a href="https://creativemarket.com/cloud.themes" class="uk-logo uk-display-inline-block" uk-scroll>ZEUS</a>
+          <a href="https://creativemarket.com/cloud.themes" class="uk-logo uk-display-inline-block" uk-scroll>LOGO</a>
         </div>
       </div>
     </div>

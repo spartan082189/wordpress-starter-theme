@@ -82,7 +82,7 @@
       }
     }).fail(function(error) {
       //Handle errors in the "fail" promise
-      notify('Cannot get tweets from Twitter. <br />Please try again.', 'danger');
+      //notify('Cannot get tweets from Twitter. <br />Please try again.', 'danger');
       console.error('Cannot get tweets from Twitter. Please try again.');
       handleTweetError(localTweets);
     }); //End "fail" promise;
