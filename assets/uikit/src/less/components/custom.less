@@ -1,0 +1,471 @@
+// Name:            Custom
+// Description:     Custom styles outside of uikit
+//
+//
+// ========================================================================
+//                   ##### Home #####
+// ================================================================
+#hero {
+  background: @global-primary-background url(../../assets/images/hero.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 500px;
+  h1, h2 {
+    color: #fff;
+    font-weight: 200;
+  }
+  .content {
+    padding-top: 10%;
+  }
+  .social-links {
+    padding-top: 2%;
+    li {
+      margin: 0 5px;
+      a {
+        color: #fff;
+        transition: all ease .3s;
+        &:hover {
+          transition: all ease .3s;
+          color: @global-secondary-background;
+        }
+      }
+    }
+  }
+  .toggle-menu-btn {
+    text-align: right;
+    margin-top: 25px;
+    .fa {
+      color: @global-primary-background;
+      transition: all ease .3s;
+      &:hover {
+        color: @global-secondary-background;
+        transition: all ease .3s;
+      }
+    }
+  }
+  .uk-logo {
+    margin-top: 25px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 2rem;
+  }
+  .scroll-down {
+    .fa {
+      transition: all ease .3s;
+      color: #fff;
+      &:hover {
+        transition: all ease .3s;
+        color: @global-secondary-background;
+        transform: translateY(5px);
+      }
+    }
+  }
+}
+
+//                   ##### Services #####
+// ================================================================
+#services {
+  .services-container {
+    margin: 0 auto;
+  }
+  .services-title {
+    font-weight: 300;
+  }
+  .service-block {
+    opacity: 0;
+  }
+  .services-icon {
+    background: @global-primary-background;
+    color: #fff;
+    padding: 15px;
+    border-radius: 30%;
+    transition: all ease .4s;
+    &:hover {
+      transition: all ease .4s;
+      background: @global-secondary-background;
+      transform: rotate(270deg);
+    }
+  }
+}
+
+//                   ##### About #####
+// ================================================================
+#about {
+  img {
+    max-height: 100%;
+    width: 100%;
+  }
+  .about-me-img {
+    background: url(../../assets/images/about.jpg) center center / cover no-repeat;
+    height: 550px;
+    width: 100%;
+  }
+  .about-me-text {
+    height: 550px;
+  }
+}
+
+//                   ##### Portfolio #####
+// ================================================================
+#portfolio {
+  img {
+    width: 100%;
+  }
+  .portfolio-item {
+    width: 100%;
+  }
+  .portfolio-text {
+    color: #fff;
+  }
+}
+
+//                   ##### Subscribe #####
+// ================================================================
+#subscribe {
+  background: @global-medium-background;
+  h2 {
+    color: #fff;
+  }
+  #subscribe-form {
+    margin: 0 auto;
+  }
+}
+
+//                   ##### Testimonials #####
+// ================================================================
+#testimonials {
+  background: @global-medium-background url(../../assets/images/testimonials.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: all ease .6s;
+  color: #fff;
+  .testimonial {
+    width: 100%;
+  }
+  .cycle-slideshow {
+    width: 100%;
+  }
+  .cycle-next, .cycle-prev {
+    z-index: 100;
+    color: #fff;
+  }
+  h2, h3, .uk-text-lead {
+    color: #fff;
+    font-weight: 200;
+  }
+}
+
+//                   ##### Contact #####
+// ================================================================
+#contact {
+  background: @global-muted-background;
+  .uk-input, .uk-select, .uk-textarea {
+    border-bottom: 1px solid @global-primary-background;
+    border-radius: 0;
+    &.uk-form-danger {
+      border: 1px solid @global-danger-background;
+      border-radius: 4px;
+    }
+  }
+  #contact-form {
+    margin: 0 auto;
+    textarea {
+      resize: none;
+    }
+  }
+  .submit-icon {
+    color: #fff;
+  }
+}
+
+//                   ##### Tweets/Contact Info #####
+// ================================================================
+#tweets-contact {
+  background: @global-dark-background;
+  color: #fff;
+  h4 {
+    color: #fff;
+    .fa {
+      vertical-align: middle;
+    }
+  }
+  .contact-info {
+    li {
+      padding: 5px 7px;
+      font-weight: 300;
+    }
+    .fa {
+      margin-right: 5px;
+    }
+  }
+  #tweets {
+    font-weight: 300;
+  }
+}
+
+//                   ##### Footer #####
+// ================================================================
+#footer {
+  background: @global-medium-background;
+  p, .fa {
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+    transition: all ease .3s;
+    &:hover {
+      transition: all ease .3s;
+    }
+  }
+  .footer-social-links {
+    li {
+      padding: 0 5px;
+    }
+    .fa {
+      transition: all ease .3s;
+      &:hover {
+        transition: all ease .3s;
+        color: @global-secondary-background;
+      }
+    }
+  }
+}
+
+//                   ##### Sticky Menu #####
+// ================================================================
+#sticky-menu {
+  &.uk-sticky {
+    .non-sticky {
+      display: block;
+    }
+    .sticky {
+      display: none;
+    }
+    &.uk-active {
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      background: @global-dark-background;
+      .non-sticky {
+        display: none;
+      }
+      .sticky {
+        display: flex;
+        .uk-logo {
+          margin-top: 0;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .uk-logo {
+    color: #fff;
+  }
+  .uk-list {
+    li {
+      font-size: 1rem;
+      font-weight: 200;
+      margin: 0;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: all ease .3s;
+      font-weight: 300;
+      span {
+        transition: all ease .3s;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 5px;
+        &:hover {
+          transition: all ease .3s;
+          border-bottom: 2px solid @global-secondary-background;
+        }
+      }
+    }
+    .fa {
+      margin-right: 10px;
+    }
+    .uk-active {
+      .fa {
+        color: @global-primary-background;
+      }
+      span {
+        border-bottom: 2px solid @global-primary-background;
+        padding-bottom: 5px;
+        transition: all ease .3s;
+      }
+    }
+  }
+}
+
+//                   ##### Navigation #####
+// ================================================================
+#nav {
+  &.uk-offcanvas-bar {
+    background: @global-dark-background;
+  }
+  .uk-list {
+    .fa {
+      margin-right: 15px;
+      font-size: 1.3em;
+    }
+    li {
+      a {
+        font-weight: 300;
+        padding: 7px 0;
+        transition: all ease .5s;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        &:hover {
+          transition: all ease .5s;
+          text-decoration: none;
+          -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+          span {
+            transition: all ease .5s;
+            border-bottom: 2px solid @global-secondary-background;
+          }
+        }
+        span {
+          transition: all ease .5s;
+          display: inline-block;
+          border-bottom: 2px solid transparent;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+  .avatar {
+    .avatar-name {
+      color: @global-secondary-background;
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+    img {
+      transition: all ease .4s;
+      max-height: 110px;
+      margin: 0 auto;
+      &:hover {
+        transition: all ease .4s;
+        transform: rotate(30deg);
+      }
+    }
+  }
+  .uk-heading-bullet {
+    font-weight: 200;
+    &:before {
+      border-color: @global-primary-background;
+    }
+  }
+}
+
+//                   ##### Site wide #####
+// ================================================================
+::selection {
+  background: @global-primary-background;
+  color: #fff;
+}
+
+.uk-offcanvas-overlay {
+  min-width: 100%;
+}
+
+.uk-totop {
+  background: @global-primary-background;
+  position: fixed;
+  bottom: 0;
+  right: 6%;
+  padding: 15px;
+  color: #fff;
+  transition: all ease .5s;
+  border-radius: 5px 5px 0 0;
+  &:hover, &:focus, &:active {
+    transition: all ease .5s;
+    color: #fff;
+    background: darken(@global-primary-background, 10%);
+  }
+}
+
+.uk-notification {
+  top: 0;
+}
+
+.uk-notification-message {
+  border-radius: 0 0 4px 4px;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  &.uk-notification-message-danger {
+    background: @global-danger-background;
+    color: #fff;
+  }
+  &.uk-notification-message-success {
+    background: @global-success-background;
+    color: #fff;
+  }
+  &.uk-notification-message-warning {
+    background: @global-warning-background;
+    color: @global-color;
+    .uk-close {
+      color: @global-color;
+    }
+  }
+  &.uk-notification-message-primary {
+    background: @global-primary-background;
+    color: #fff;
+  }
+  .uk-close {
+    color: #fff;
+  }
+}
+
+.promotion {
+  position: fixed;
+  bottom: 0;
+  left: 2%;
+  background: @global-primary-background;
+  border-radius: 4px 4px 0 0;
+  padding: 10px 20px;
+  min-width: 100px;
+  transition: all ease .5s;
+  z-index: 999;
+  a {
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa {
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+  &:hover {
+    background: darken(@global-primary-background, 10%);
+    transition: all ease .5s;
+  }
+}
+
+//                   ##### Media Queries #####
+// ================================================================
+@media (max-width: @breakpoint-small) {
+  #testimonials {
+    background-attachment: initial;
+  }
+  #about .about-me-text {
+    height: auto;
+  }
+  #tweets-contact {
+    h4, .uk-list, #tweets {
+      text-align: center !important;
+    }
+  }
+  #subscribe-form {
+    .uk-margin {
+      text-align: center;
+    }
+    #newsletter-email {
+      margin-bottom: 15px;
+    }
+  }
+}
