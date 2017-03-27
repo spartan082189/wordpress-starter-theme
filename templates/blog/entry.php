@@ -1,4 +1,4 @@
-<article class="post center-align">
+<article class="uk-padding">
     <h2>
       <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="teal-text text-lighten-2"><?php the_title(); ?></a>
     </h2>
