@@ -10,7 +10,7 @@
   </section>    
   <section id="blog-posts">
     <div class="uk-container uk-container-large">
-      <div uk-grid class="uk-grid-collapse">
+      <div uk-grid class="uk-grid-collapse uk-margin-top">
         <div class="uk-width-1-2@m">
           <?php
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

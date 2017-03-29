@@ -1,7 +1,11 @@
-<footer class="entry-footer">
-<span class="cat-links"><?php _e( 'Categories: ', 'blankslate' ); ?><?php the_category( ', ' ); ?></span>
-<span class="tag-links"><?php the_tags(); ?></span>
-<?php if ( comments_open() ) { 
-echo '<span class="meta-sep">|</span> <span class="comments-link"><a href="' . get_comments_link() . '">' . sprintf( __( 'Comments', 'blankslate' ) ) . '</a></span>';
-} ?>
+<footer class="uk-clearfix">
+  <div class="uk-float-right"><a href="<?php echo get_comments_link() ?>"><?php echo comments_number() ?></a></div>
+  <div class="uk-float-left">
+    <?php 
+      $categories = get_the_category(); 
+      foreach ($categories as $category) {
+        echo '<a class="uk-label uk-display-inline-block" href="' . get_category_link($category->term_id) . '">' . $category->cat_name . '</a>';
+      }
+    ?>
+    </div>
 </footer> 
