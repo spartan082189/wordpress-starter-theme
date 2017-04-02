@@ -25,6 +25,29 @@
     .the-post {
         background: @global-muted-background;
     }
+    .uk-article-title {
+        a {
+            text-decoration: none;
+        }
+    }
+    .the-post-footer {
+        .the-post-cats {
+            .uk-label {
+                margin: 0 5px;
+                border-radius: 4px;
+                text-decoration: none;
+                transition: all ease .7s;
+                &:hover {
+                    background: @global-secondary-background;
+                    transition: all ease .7s;
+                    color: #fff;
+                }
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
 }
 
 //                   ##### Single #####

@@ -2,13 +2,9 @@
 function my_search_form( $form ) {
     
     $form =  '<form method="get" id="search-form" action="'.home_url( '/' ).'">
-    <div class="input-field">
-    <i class="material-icons prefix">search</i>
-    <input id="icon_prefix" type="text" class="validate" value="" name="s">
-    <label for="icon_prefix">Search this website</label>
-    </div>
-    <input type="submit" value="Search for blog posts" class="btn btn-lg"/>
-        </form>';
+                <span class="uk-form-icon" uk-icon="icon: search"></span>
+                <input type="text" class="uk-input" placeholder="Search..." value="" name="s">
+             </form>';
     
     return $form;
 }

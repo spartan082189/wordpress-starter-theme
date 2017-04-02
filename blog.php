@@ -11,7 +11,7 @@
   <section id="blog-posts">
     <div class="uk-container uk-container-large">
       <div uk-grid class="uk-grid-collapse uk-margin-top">
-        <div class="uk-width-1-2@m">
+        <div class="uk-width-2-3@m">
           <?php
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $args = array('post_type' => 'post', 'posts_per_page' => 5, 'paged' => $paged);
@@ -21,7 +21,7 @@
           <?php get_template_part('templates/blog/entry'); ?>
           <?php endwhile; ?>
         </div>
-        <div class="uk-width-1-2@m"><?php get_sidebar(); ?></div>
+        <div class="uk-width-1-3@m"><?php get_sidebar(); ?></div>
       </div>
     </div>
   </section>

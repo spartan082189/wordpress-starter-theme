@@ -1,6 +1,6 @@
-<footer class="uk-clearfix">
+<footer class="uk-clearfix the-post-footer">
   <div class="uk-float-right"><a href="<?php echo get_comments_link() ?>"><?php echo comments_number() ?></a></div>
-  <div class="uk-float-left">
+  <div class="uk-float-left the-post-cats">
     <?php 
       $categories = get_the_category(); 
       foreach ($categories as $category) {
