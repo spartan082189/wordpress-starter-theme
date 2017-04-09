@@ -2,8 +2,10 @@
 function my_search_form( $form ) {
     
     $form =  '<form method="get" id="search-form" action="'.home_url( '/' ).'">
+                <div class="uk-inline">
                 <span class="uk-form-icon" uk-icon="icon: search"></span>
-                <input type="text" class="uk-input" placeholder="Search..." value="" name="s">
+                <input type="text" class="uk-input uk-form-large" placeholder="Search..." value="" name="s">
+                </div>
              </form>';
     
     return $form;

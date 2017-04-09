@@ -30,24 +30,6 @@
       }
     }
   }
-  .toggle-menu-btn {
-    text-align: right;
-    margin-top: 25px;
-    .fa {
-      color: @global-primary-background;
-      transition: all ease .3s;
-      &:hover {
-        color: @global-secondary-background;
-        transition: all ease .3s;
-      }
-    }
-  }
-  .uk-logo {
-    margin-top: 25px;
-    color: #fff;
-    font-weight: 300;
-    font-size: 2rem;
-  }
   .scroll-down {
     .fa {
       transition: all ease .3s;
@@ -236,6 +218,12 @@
   &.uk-sticky {
     .non-sticky {
       display: block;
+      .uk-logo {
+        color: #fff;
+        font-weight: 300;
+        font-size: 2rem;
+        margin-top: 25px;
+      }
     }
     .sticky {
       display: none;
@@ -295,14 +283,6 @@
         transition: all ease .3s;
       }
     }
-  }
-}
-#blog { 
-.uk-logo {
-      margin-top: 25px;
-      color: #fff;
-      font-weight: 300;
-      font-size: 2rem;
   }
 }
 
@@ -424,6 +404,19 @@
   }
   .uk-close {
     color: #fff;
+  }
+}
+
+.toggle-menu-btn {
+  text-align: right;
+  margin-top: 25px;
+  .fa {
+    color: @global-primary-background;
+    transition: all ease .3s;
+    &:hover {
+      color: @global-secondary-background;
+      transition: all ease .3s;
+    }
   }
 }
 

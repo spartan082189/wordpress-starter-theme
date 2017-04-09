@@ -6,9 +6,9 @@
 //                   ##### Blog #####
 // ================================================================
 #blog-hero {
-    background: @global-primary-background url(../../assets/images/hero.jpg) no-repeat center center;
+    background: @global-primary-background url(../../assets/images/blog-hero.jpg) no-repeat center center;
     background-size: cover;
-    // background-attachment: fixed;
+    background-attachment: fixed;
     transition: all ease .7s;
     min-height: 300px;
     h1, .lead-text {
@@ -24,6 +24,9 @@
     margin: 3% 0;
     .the-post {
         background: @global-muted-background;
+        img {
+            width: 100%;
+        }
     }
     .uk-article-title {
         a {

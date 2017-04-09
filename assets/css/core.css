@@ -10241,24 +10241,6 @@ td.uk-text-break {
   transition: all ease .3s;
   color: #f8877f;
 }
-#hero .toggle-menu-btn {
-  text-align: right;
-  margin-top: 25px;
-}
-#hero .toggle-menu-btn .fa {
-  color: #f44336;
-  transition: all ease .3s;
-}
-#hero .toggle-menu-btn .fa:hover {
-  color: #f8877f;
-  transition: all ease .3s;
-}
-#hero .uk-logo {
-  margin-top: 25px;
-  color: #fff;
-  font-weight: 300;
-  font-size: 2rem;
-}
 #hero .scroll-down .fa {
   transition: all ease .3s;
   color: #fff;
@@ -10414,6 +10396,12 @@ td.uk-text-break {
 #sticky-menu.uk-sticky .non-sticky {
   display: block;
 }
+#sticky-menu.uk-sticky .non-sticky .uk-logo {
+  color: #fff;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-top: 25px;
+}
 #sticky-menu.uk-sticky .sticky {
   display: none;
 }
@@ -10467,12 +10455,6 @@ td.uk-text-break {
   border-bottom: 2px solid #f44336;
   padding-bottom: 5px;
   transition: all ease .3s;
-}
-#blog .uk-logo {
-  margin-top: 25px;
-  color: #fff;
-  font-weight: 300;
-  font-size: 2rem;
 }
 #nav.uk-offcanvas-bar {
   background: #263238;
@@ -10579,6 +10561,18 @@ td.uk-text-break {
 .uk-notification-message .uk-close {
   color: #fff;
 }
+.toggle-menu-btn {
+  text-align: right;
+  margin-top: 25px;
+}
+.toggle-menu-btn .fa {
+  color: #f44336;
+  transition: all ease .3s;
+}
+.toggle-menu-btn .fa:hover {
+  color: #f8877f;
+  transition: all ease .3s;
+}
 .promotion {
   position: fixed;
   bottom: 0;
@@ -10625,8 +10619,9 @@ td.uk-text-break {
   }
 }
 #blog-hero {
-  background: #f44336 url(../../assets/images/hero.jpg) no-repeat center center;
+  background: #f44336 url(../../assets/images/blog-hero.jpg) no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
   transition: all ease .7s;
   min-height: 300px;
 }
@@ -10644,6 +10639,9 @@ td.uk-text-break {
 #blog-posts .the-post {
   background: #eee;
 }
+#blog-posts .the-post img {
+  width: 100%;
+}
 #blog-posts .uk-article-title a {
   text-decoration: none;
 }
@@ -10660,4 +10658,25 @@ td.uk-text-break {
 }
 #blog-posts .the-post-footer .the-post-cats .uk-label:first-child {
   margin-left: 0;
+}
+#sidebar {
+  padding-right: 0;
+}
+#sidebar #search-2 {
+  margin-bottom: 30px;
+  background: none;
+  padding: 0;
+}
+#sidebar .uk-list > li {
+  background: #eee;
+  padding: 15px;
+}
+#sidebar .uk-list > li h3 {
+  margin-bottom: 0;
+}
+#search-form .uk-inline {
+  width: 100%;
+}
+#search-form .uk-input {
+  border-bottom: 1px solid #f44336;
 }
