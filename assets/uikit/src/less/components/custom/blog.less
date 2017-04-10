@@ -2,6 +2,33 @@
 // Description:     Blog styles
 //
 //
+//                   ##### Shared #####
+// ================================================================
+.the-post-cats {
+    .uk-label {
+        margin: 0 5px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: all ease .7s;
+        &:hover {
+            background: @global-secondary-background;
+            transition: all ease .7s;
+            color: #fff;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.post-date {
+    color: #fff;
+    margin: 15px 0;
+}
+.the-date {
+    vertical-align: middle;
+    margin-left: 5px;
+}
 // ========================================================================
 //                   ##### Blog #####
 // ================================================================
@@ -33,25 +60,19 @@
             text-decoration: none;
         }
     }
-    .the-post-footer {
-        .the-post-cats {
-            .uk-label {
-                margin: 0 5px;
-                border-radius: 4px;
-                text-decoration: none;
-                transition: all ease .7s;
-                &:hover {
-                    background: @global-secondary-background;
-                    transition: all ease .7s;
-                    color: #fff;
-                }
-                &:first-child {
-                    margin-left: 0;
-                }
-            }
-        }
-    }
 }
 
 //                   ##### Single #####
 // ================================================================
+#single-header {
+    background: @global-medium-background;
+    min-height: 200px;
+    h1, .lead-text {
+        color: #fff;
+        font-weight: 200;
+    }
+}
+
+#single-post {
+    margin: 3% 0;
+}

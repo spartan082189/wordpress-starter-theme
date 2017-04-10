@@ -10618,6 +10618,28 @@ td.uk-text-break {
     margin-bottom: 15px;
   }
 }
+.the-post-cats .uk-label {
+  margin: 0 5px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all ease .7s;
+}
+.the-post-cats .uk-label:hover {
+  background: #f8877f;
+  transition: all ease .7s;
+  color: #fff;
+}
+.the-post-cats .uk-label:first-child {
+  margin-left: 0;
+}
+.post-date {
+  color: #fff;
+  margin: 15px 0;
+}
+.the-date {
+  vertical-align: middle;
+  margin-left: 5px;
+}
 #blog-hero {
   background: #f44336 url(../../assets/images/blog-hero.jpg) no-repeat center center;
   background-size: cover;
@@ -10645,19 +10667,17 @@ td.uk-text-break {
 #blog-posts .uk-article-title a {
   text-decoration: none;
 }
-#blog-posts .the-post-footer .the-post-cats .uk-label {
-  margin: 0 5px;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: all ease .7s;
+#single-header {
+  background: #455a64;
+  min-height: 200px;
 }
-#blog-posts .the-post-footer .the-post-cats .uk-label:hover {
-  background: #f8877f;
-  transition: all ease .7s;
+#single-header h1,
+#single-header .lead-text {
   color: #fff;
+  font-weight: 200;
 }
-#blog-posts .the-post-footer .the-post-cats .uk-label:first-child {
-  margin-left: 0;
+#single-post {
+  margin: 3% 0;
 }
 #sidebar {
   padding-right: 0;

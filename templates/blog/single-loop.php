@@ -1,32 +1,48 @@
 <?php if (have_posts()) while (have_posts()) : the_post(); ?>
-  <div id="single-header">
-    <section class="container">
-        <div class="row center-align">
-          <h1 class="teal-text text-lighten-2"><?php the_title(); ?></h1>
-          <div class="post-date"><i class="material-icons date-icon">date_range</i> <?php echo the_date(); ?></div>
-          <p><?php the_category(); ?></p>
+  <div id="single-header" class="uk-padding-small">
+    <section class="uk-container">
+        <div class="uk-text-center">
+          <h1><?php the_title(); ?></h1>
+          <div class="post-date"><span uk-icon="icon: calendar"></span><span class="the-date"><?php echo the_date(); ?></span></div>
+          <div class="the-post-cats">
+            <?php 
+                $categories = get_the_category(); 
+                foreach ($categories as $category) {
+                    echo '<a class="uk-label uk-display-inline-block" href="' . get_category_link($category->term_id) . '">' . $category->cat_name . '</a>';
+                }
+            ?>
+            </div>
         </div>
     </section>
   </div> <!--/#single-header-->
   <div id="single-post">
-    <section class="container">
-      <div class="row">
-        <div class="col m9 s12">
+    <section class="uk-container uk-container-large">
+      <div uk-grid class="uk-grid-collapse">
+        <div class="uk-width-2-3@m">
+        <div class="uk-padding uk-padding-remove-top">
           <div class="the-content"><?php the_content(); ?></div>
-          <p><?php the_category(); ?></p>
+          <div class="the-post-cats">
+            <?php 
+                $categories = get_the_category(); 
+                foreach ($categories as $category) {
+                    echo '<a class="uk-label uk-display-inline-block" href="' . get_category_link($category->term_id) . '">' . $category->cat_name . '</a>';
+                }
+            ?>
+            </div>
           <?php wp_link_pages(array('before' => '<div class="page-link">' . __('Pages:', 'twentyten'), 'after' => '</div>')); ?>
           <?php edit_post_link(__('Edit', 'twentyten'), '<span class="edit-link">', '</span>'); ?>
-          <div class="center-align post-pagination">
+          <div class="uk-text-center post-pagination">
             <div title="Newer post">
-              <?php next_post_link('%link', '%title <span class="meta-nav">' . _x('<i class="material-icons">keyboard_arrow_right</i>', 'Next post link', 'twentyten') . '</span>'); ?>
+              <?php next_post_link('%link', '%title <span class="meta-nav">' . _x('<span uk-icon="icon: chevron-right">', 'Next post link', 'twentyten') . '</span>'); ?>
             </div>
             <div title="Older post">
-              <?php previous_post_link('%link', '<span class="meta-nav">' . _x('<i class="material-icons">keyboard_arrow_left</i>', 'Previous post link', 'twentyten') . '</span> %title'); ?>
+              <?php previous_post_link('%link', '<span class="meta-nav">' . _x('<span uk-icon="icon: chevron-left">', 'Previous post link', 'twentyten') . '</span> %title'); ?>
             </div>
           </div><!-- #nav-below -->
+          </div>
         </div>
         <?php endwhile; // end of the loop. ?>
-      <div class="col m3 s12">
+      <div class="uk-width-1-3@m">
           <?php get_sidebar(); ?>
       </div>
     </div><!--/.row-->
