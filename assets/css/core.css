@@ -10700,3 +10700,11 @@ td.uk-text-break {
 #search-form .uk-input {
   border-bottom: 1px solid #f44336;
 }
+#comments-list {
+  padding: 40px 0;
+}
+.list-comments > li {
+  background: #eee;
+  padding: 25px 20px;
+  border-radius: 6px;
+}
