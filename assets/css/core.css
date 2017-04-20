@@ -10393,6 +10393,9 @@ td.uk-text-break {
   transition: all ease .3s;
   color: #f8877f;
 }
+#sticky-menu {
+  width: 100% !important;
+}
 #sticky-menu.uk-sticky .non-sticky {
   display: block;
 }
@@ -10668,13 +10671,35 @@ td.uk-text-break {
   text-decoration: none;
 }
 #single-header {
-  background: #455a64;
-  min-height: 200px;
+  background: #455a64 top center no-repeat;
+  min-height: 300px;
+  background-size: cover;
+  position: relative;
+  z-index: 9999;
 }
 #single-header h1,
 #single-header .lead-text {
   color: #fff;
   font-weight: 200;
+}
+#single-header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #000, #000);
+  opacity: .4;
+  z-index: -9;
+}
+#single-header .share-icons .uk-icon {
+  color: white;
+  transition: all ease .7s;
+}
+#single-header .share-icons .uk-icon:hover {
+  transition: all ease .7s;
+  color: #f44336;
 }
 #single-post {
   margin: 3% 0;
