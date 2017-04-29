@@ -10733,3 +10733,18 @@ td.uk-text-break {
   padding: 25px 20px;
   border-radius: 6px;
 }
+#cat-hero {
+  background: #263238 top center no-repeat;
+  min-height: 200px;
+  background-size: cover;
+  position: relative;
+  z-index: 9999;
+}
+#cat-hero h1,
+#cat-hero .lead-text {
+  color: #fff;
+  font-weight: 200;
+}
+#cat-posts {
+  margin: 3% 0;
+}

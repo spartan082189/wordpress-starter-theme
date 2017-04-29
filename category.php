@@ -2,7 +2,7 @@
 <div id="category">
     <section id="cat-hero">
         <?php get_template_part('templates/globals/navigation'); ?>
-        <div class="uk-container uk-container-large">
+        <div class="uk-container uk-container-large uk-text-center">
             <h1 uk-scrollspy="cls:uk-animation-slide-top-small; delay: 100; repeat: true"><?php single_cat_title(); ?></h1>
         </div>
     </section>    
