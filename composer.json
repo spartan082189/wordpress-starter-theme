@@ -1,0 +1,9 @@
+{
+    "require": {
+        "slim/slim": "^3.0",
+        "simple-validator/simple-validator": "1.0.*",
+        "phpmailer/phpmailer": "~5.2",
+        "guzzlehttp/guzzle": "~6.0",
+        "abraham/twitteroauth": "^0.7.2"
+    }
+}

@@ -2,7 +2,7 @@
   /*
     ### Variables ###
   */
-  var baseApiUrl = './api/index.php'; //api url
+  var baseApiUrl = theme.url + '/api/index.php'; //api url
 
   /*
     ############### Handle newsletter validation ###############

@@ -21,6 +21,18 @@ function SearchFilter($query) {
 
 add_filter('pre_get_posts','SearchFilter');
 
+// Register the script
+wp_register_script( 'load_theme_url', get_stylesheet_directory_uri().'/assets/js/common.js' );
+
+// Localize the script with new data
+$translation_array = array(
+	'url' => get_template_directory_uri()
+);
+wp_localize_script( 'load_theme_url', 'theme', $translation_array );
+
+// Enqueued script with localized data.
+wp_enqueue_script( 'load_theme_url' );
+
 //DELETE
 
 add_action( 'after_setup_theme', 'blankslate_setup' );

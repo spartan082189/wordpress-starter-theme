@@ -25,7 +25,7 @@
   <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/uikit/dist/js/uikit.min.js"></script>
   <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/cycle.js"></script>
-  <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/common.js"></script>
+  <!-- <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/common.js"></script> -->
   </body>
 
   </html>

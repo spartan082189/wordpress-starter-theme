@@ -10733,6 +10733,11 @@ td.uk-text-break {
   padding: 25px 20px;
   border-radius: 6px;
 }
+#respond .uk-input,
+#respond .uk-select,
+#respond .uk-textarea {
+  background: #ffffff;
+}
 #cat-hero {
   background: #263238 top center no-repeat;
   min-height: 200px;
@@ -10746,5 +10751,25 @@ td.uk-text-break {
   font-weight: 200;
 }
 #cat-posts {
+  margin: 3% 0;
+}
+#search-hero {
+  background: #455a64 top center no-repeat;
+  min-height: 250px;
+  background-size: cover;
+  position: relative;
+  z-index: 9999;
+}
+#search-hero h1,
+#search-hero .lead-text {
+  color: #fff;
+  font-weight: 200;
+  margin-top: 15px;
+}
+#search-hero .fa-search {
+  color: #fff;
+  font-size: 3em;
+}
+#search-content {
   margin: 3% 0;
 }
